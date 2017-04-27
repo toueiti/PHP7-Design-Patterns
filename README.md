@@ -5,11 +5,15 @@ Présentation des design patterns écrit en PHP7.
 
 Pour voir le résultat du test (phpunit) tout d'abord vous devez installer les dépendance avec composer
 ### Installer les dépendances
-
+```bash
 $ composer install
+```
 si vous ête dans un environnement windows 
+```bash
 c:\PHP7-Design-Patterns> php composer.phar install
+```
 
 ### Exécution d'un test
-
+```bash
 $ ./vendor/bin/phpunit
+```
