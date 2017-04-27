@@ -8,7 +8,7 @@ Pour voir le résultat du test (phpunit) tout d'abord vous devez installer les d
 ```bash
 $ composer install
 ```
-si vous ête dans un environnement windows 
+si vous ête dans un environnement windows vous devez télécharger [composer.phar](https://getcomposer.org/download/)  sur votre dossier
 ```bash
 c:\PHP7-Design-Patterns> php composer.phar install
 ```
