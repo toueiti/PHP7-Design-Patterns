@@ -19,7 +19,7 @@ class Singleton {
      * seule la fonction statique getInstance qui retourne la seule instance
      * @return Singleton
      */
-    public static function getInstance()
+    public static function getInstance(): Singleton
     {
           if (self::$instance == null)
           {
