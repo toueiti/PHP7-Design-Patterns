@@ -5,6 +5,7 @@ namespace DP\Creational\Singleton;
 class Singleton {
     
     private static $instance = null;
+    private $id;
 
     /**
      * la fonction __construct est privée
@@ -12,7 +13,7 @@ class Singleton {
      */
     private function __construct()
     {
-        // Ici on mettra le code .
+        $this->id = uniqid();
     }
 
     /**
@@ -27,5 +28,9 @@ class Singleton {
           }
 
           return self::$instance;
+    }
+    
+    public function getId() {
+        return $this->id;
     }
 }

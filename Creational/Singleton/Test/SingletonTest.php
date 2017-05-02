@@ -13,5 +13,6 @@ class SingletonTest extends TestCase {
         $instance2 = Singleton::getInstance();
         $this->assertInstanceOf(Singleton::class, $instance1);
         $this->assertSame($instance1, $instance2);
+        $this->assertEquals($instance2->getId(), $instance1->getId());
     }
 }
