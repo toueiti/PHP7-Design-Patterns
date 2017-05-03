@@ -19,6 +19,6 @@ class Parameter {
     }
     
     public function export() {
-        $this->output->output($this->config);
+        return $this->output->output($this->config);
     }
 }
