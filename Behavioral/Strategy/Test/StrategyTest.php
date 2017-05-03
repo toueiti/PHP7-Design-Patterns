@@ -20,6 +20,8 @@ class StrategyTest extends TestCase {
         $conf->addParam('port', '21');
         $conf->addParam('username', 'toto');
         $this->assertJson($conf->export());
+        $this->assertJsonStringEqualsJsonString($conf->export(), 
+                '{"ip":"40.50.60.70", "port": "21", "username":"toto"}');
     }  
     
     public function testXmlOutput() {
