@@ -14,8 +14,7 @@ use PHPUnit\Framework\TestCase;
 class StrategyTest extends TestCase {
     
     public function testJsonOutput() {
-        $json = new JsonOutput();
-        $conf = new Parameter($json);
+        $conf = new Parameter(new JsonOutput());
         $conf->addParam('ip', '40.50.60.70');
         $conf->addParam('port', '21');
         $conf->addParam('username', 'toto');
@@ -25,8 +24,7 @@ class StrategyTest extends TestCase {
     }  
     
     public function testXmlOutput() {
-        $xml = new XmlOutput();
-        $conf = new Parameter($xml);
+        $conf = new Parameter(new XmlOutput());
         $conf->addParam('ip', '40.50.60.70');
         $conf->addParam('port', '21');
         $conf->addParam('username', 'toto');
