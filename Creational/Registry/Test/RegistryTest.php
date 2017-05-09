@@ -12,8 +12,8 @@ class RegistryTest extends  TestCase{
     
     public function testRegistry() {
         $obj = new \stdClass();
-        Registry::set('obj', $obj);
-        $this->assertSame(Registry::get('obj'), $obj);              
+        Registry::set('OBJ', $obj);
+        $this->assertSame(Registry::get('OBJ'), $obj);              
     }
     
     /**
@@ -21,7 +21,7 @@ class RegistryTest extends  TestCase{
      */
     public function testThrowsExceptionWhenTryingToGetInvalidKey()
     {
-        Registry::get('nokey');
+        Registry::get('NOKEY');
     }
 
 }
