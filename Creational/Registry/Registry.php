@@ -41,7 +41,7 @@ class Registry {
      * @param string $key
      * @return void
      */
-    final public static function removeProduct($key)
+    final public static function remove($key)
     {
         if(!array_key_exists($key, self::$items)){
             throw new \InvalidArgumentException('Invalid key given');
