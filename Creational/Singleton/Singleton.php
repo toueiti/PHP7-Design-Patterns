@@ -30,7 +30,18 @@ class Singleton {
           return self::$instance;
     }
     
+    /**
+     * un identifiant pour le test
+     * @return integer
+     */
     public function getId() {
         return $this->id;
+    }
+    
+    /**
+     * Clonage interdit
+     */
+    private function __clone (){
+        
     }
 }
