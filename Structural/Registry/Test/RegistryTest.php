@@ -1,13 +1,10 @@
 <?php
 
-namespace DP\Creational\Registry\Test;
+namespace DP\Structural\Registry\Test;
 
-use DP\Creational\Registry\Registry;
+use DP\Structural\Registry\Registry;
 use PHPUnit\Framework\TestCase;
-/**
- * class of RegistryTest
- *
- */
+
 class RegistryTest extends  TestCase{
     
     public function testRegistry() {

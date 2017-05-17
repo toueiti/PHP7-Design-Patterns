@@ -1,6 +1,6 @@
 <?php
 
-namespace DP\Creational\Registry;
+namespace DP\Structural\Registry;
 
 /**
  * class of Registry
