@@ -24,14 +24,14 @@ class LogObserver implements \SplObserver {
                 $row [] = (new \DateTime())->format('d-m-Y H:i:s');
                 $row [] = $status [2];
                 $row [] = $status[1];
-                $row [] = 'Utilisateur inconnu';
+                $row [] = 'Mot de passe incorrect';
                 $this->log [] = $row;
                 break;
             case 3:
                 $row [] = (new \DateTime())->format('d-m-Y H:i:s');
                 $row [] = $status [2];
                 $row [] = $status[1];
-                $row [] = 'Utilisateur inconnu';
+                $row [] = 'Non autorisé';
                 $this->log [] = $row;
                 break;  
         }
